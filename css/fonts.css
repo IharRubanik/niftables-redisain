@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: url(../fonts/AkzidenzGroteskPro-BoldEx.woff2) format("woff2"),
+    url(../fonts/AkzidenzGroteskPro-BoldEx.woff) format("woff"),
+    url(../fonts/AkzidenzGroteskPro-BoldEx.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../fonts/Barlow-Regular.eot@-kwf309);
+  src: url(../fonts/Barlow-Regular.eot@) format("embedded-opentype"),
+    url(../fonts/Barlow-Regular.woff@-kwf309) format("woff"),
+    url(../fonts/Barlow-Regular.ttf@-kwf309) format("truetype"),
+    url(https://www.niftables.com/../fonts/Barlow-Regular.svg?-kwf309)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../fonts/Barlow-Light.eot@-kwf309);
+  src: url(../fonts/Barlow-Light.eot@) format("embedded-opentype"),
+    url(../fonts/Barlow-Light.woff@-kwf309) format("woff"),
+    url(../fonts/Barlow-Light.ttf@-kwf309) format("truetype"),
+    url(https://www.niftables.com/../fonts/Barlow-Light.svg?-kwf309) format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url(../fonts/Barlow-Medium.eot@-kwf309);
+  src: url(../fonts/Barlow-Medium.eot@) format("embedded-opentype"),
+    url(../fonts/Barlow-Medium.woff@-kwf309) format("woff"),
+    url(../fonts/Barlow-Medium.ttf@-kwf309) format("truetype"),
+    url(https://www.niftables.com/../fonts/Barlow-Medium.svg?-kwf309) format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: url(../fonts/AkzidenzGroteskPro-Regular.eot@-kwf309);
+  src: url(../fonts/AkzidenzGroteskPro-Regular.eot@) format("embedded-opentype"),
+    url(../fonts/AkzidenzGroteskPro-Regular.woff@-kwf309) format("woff"),
+    url(../fonts/AkzidenzGroteskPro-Regular.ttf@-kwf309) format("truetype"),
+    url(https://www.niftables.com/../fonts/AkzidenzGroteskPro-Regular.svg?-kwf309)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: url(https://www.niftables.com/AkzidenzGroteskPro-MdEx.eot);
+  src: url(../fonts/AkzidenzGroteskPro-MdEx.eot@) format("embedded-opentype"),
+    url(../fonts/AkzidenzGroteskPro-MdEx.woff2) format("woff2"),
+    url(../fonts/AkzidenzGroteskPro-MdEx.woff) format("woff"),
+    url(../fonts/AkzidenzGroteskPro-MdEx.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Din Display Pro";
+  src: local("PF Din Display Pro Light"), local("PF-Din-Display-Pro-Light"),
+    url(../fonts/PFDinDisplayPro-Light.woff2) format("woff2"),
+    url(../fonts/PFDinDisplayPro-Light.woff) format("woff"),
+    url(../fonts/PFDinDisplayPro-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Din Display Pro";
+  src: local("PF Din Display Pro Regular"), local("PF-Din-Display-Pro-Regular"),
+    url(../fonts/PFDinDisplayPro-Regular.woff2) format("woff2"),
+    url(../fonts/PFDinDisplayPro-Regular.woff) format("woff"),
+    url(../fonts/PFDinDisplayPro-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
