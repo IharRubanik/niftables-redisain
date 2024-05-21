@@ -29,21 +29,19 @@ window.addEventListener("DOMContentLoaded", function () {
   };
 
   const mediaQuery = window.matchMedia("only screen and (max-width: 1200px)");
-  const mediaQueryMobile = window.matchMedia("only screen and (max-width: 600px)");
+  const mediaQueryMobile = window.matchMedia(
+    "only screen and (max-width: 600px)"
+  );
 
-  let footerBg = document.querySelector('.footer__background');
-  function changeBackground(){
-    if(mediaQueryMobile.matches) {
-      footerBg.src = './img/contact/footet-background-mobile.png'
-    }
-    else{
-      footerBg.src = './img/contact/footet-background.webp'
+  let footerBg = document.querySelector(".footer__background");
+  function changeBackground() {
+    if (mediaQueryMobile.matches) {
+      footerBg.src = "./img/contact/footet-background-mobile.png";
+    } else {
+      footerBg.src = "./img/contact/footet-background.webp";
     }
   }
-  changeBackground()
-
-
-
+  changeBackground();
 
   if (mediaQuery.matches) {
     // Accordion
@@ -53,6 +51,7 @@ window.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < accordionItem.length; i++) {
       accordionItem[i].style.height = `${accordionTitle[i].scrollHeight}px`;
       accordionItem[i].addEventListener("click", function (e) {
+
         if (accordionItem[i].classList.contains("show")) {
           accordionItem[i].style.height = `${accordionTitle[i].scrollHeight}px`;
           accordionItem[i].classList.remove("show");
@@ -62,6 +61,10 @@ window.addEventListener("DOMContentLoaded", function () {
             accordionDescriptions[i].scrollHeight
           }px`;
           accordionItem[i].classList.add("show");
+          setTimeout(() => {
+            accordionItem[i].scrollIntoView({ behavior: "smooth" });
+          }, 400);
+       
           removeAccordion(e.currentTarget);
         }
       });
@@ -226,7 +229,7 @@ window.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 600) {
       initProcess(0);
     }
-    changeBackground()
+    changeBackground();
   });
 
   window.addEventListener("orientationchange", function () {
@@ -234,7 +237,7 @@ window.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth > 600) {
       initProcess(0);
     }
-    changeBackground()
+    changeBackground();
   });
 
   // planets
@@ -244,8 +247,23 @@ window.addEventListener("DOMContentLoaded", function () {
       const textContent = element.textContent.trim();
       return textContent.length > 0;
     }
-
     const planets = document.querySelectorAll(".planet");
+    function arrowActive() {
+      const descriptions = document.querySelectorAll(
+        ".planet__descriptions-container .planet-descriptions"
+      );
+      const planetArrows = document.querySelectorAll(".planet-arrow");
+      console.log(descriptions);
+      if (descriptions.length !== planetArrows.length) {
+        return;
+      }
+      descriptions.forEach((description, index) => {
+        if (!description.textContent.trim()) {
+          planetArrows[index].style.opacity = "0";
+        }
+      });
+    }
+    arrowActive();
     planets.forEach((planet) => {
       planet.addEventListener("mouseover", () => {
         const descriptionsContainer = planet.querySelector(

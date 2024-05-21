@@ -118,6 +118,24 @@
     width: 71.745vw;
     height: 56.12vw;
   }
+  body .wrapper .preloader .preloader__container svg {
+    width: 7.777vw;
+  }
+  body .wrapper .preloader .preloader__container .preloader__title h2 {
+    font-size: 2.865vw;
+    line-height: 2.847vw;
+  }
+  body .wrapper .preloader .preloader__container .preloader__title span {
+    font-size: 1.432vw;
+    line-height: 1.528vw;
+  }
+  body .wrapper .preloader .preloader-loading {
+    width: 3.906vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7.2%;
+  }
   body .wrapper .background {
     height: 101.215vw;
     top: 0;
@@ -262,10 +280,8 @@
     margin-left: auto;
     gap: 3.646vw;
   }
-  body .wrapper .header .header-inner .header-list .header-list__item img {
-    width: auto;
-    max-width: 2.604vw;
-    max-height: 2.214vw;
+  body .wrapper .header .header-inner .header-list .header-list__item svg {
+    width: 2.604vw;
   }
   body .wrapper .header .header-inner:hover {
     width: 4.861vw;

@@ -133,6 +133,31 @@
       }
     }
     .wrapper {
+      .preloader {
+        .preloader__container {
+          svg {
+            width: 5.833vw;
+          }
+          .preloader__title {
+            h2 {
+              font-size: 1.667vw;
+              line-height: 2.135vw;
+            }
+            span {
+              font-size: 0.938vw;
+              line-height: 1.146vw;
+            }
+          }
+        }
+        .preloader-loading {
+          width: 2.292vw;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 7.2%;
+          animation: 1.5s preloader__loading-circle linear infinite;
+        }
+      }
       .background {
         height: 75.911vw;
         width: 100%;
@@ -281,15 +306,10 @@
             margin-left: auto;
             gap: 2.734vw;
             .header-list__item {
-              img {
-                width: auto;
-                max-width: 1.953vw;
-                max-height: 1.66vw;
+              svg {
+                width: 1.953vw;
               }
             }
-          }
-          &:hover {
-            width: 3.646vw;
           }
         }
       }
